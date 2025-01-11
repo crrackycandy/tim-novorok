@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Liquid Rocket Engine 1</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo 
+								<a href="index.html" class="logo">
+									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Phantom</span>
+								</a> -->
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">1st Engine</a></li>
+							<li><a href="asi.html">Augmented Spark Igniter</a></li>
+							<!-- <li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li> -->
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Engine 1 - 150lbf Nitrous/Ethanol Liquid Rocket Engine</h1>
+							<span class="image main"><img src="images/image.png" alt="" /></span>
+							<p>This is the first rocket engine made by Hornet Aerospace & Propulsion. It is designed to produce 150lbf, at 250psi and uses ethanol and nitrous oxide as propellants. This project was started sometime in the Fall 2023 semester, and was successfully fired in January 2025. The design is heavily based on Half Cat Rocketry architecture, as it is an excellent starting point for liquids. This engine was designed and manufactured at Sac State, and tested at FAR.</p>
+							<p>The thrust chamber does not have any active cooling built in, it relies on working as a heat sink to keep itself from melting. Heat sink cooling is when the inner surface of the combustion chamber conducts heat away from itself and into the outer surface, which keeps the chamber from melting. Eventually the entire chamber would heat up, and heat sink cooling would no longer work, in our case we designed the thrust chamber to be able to survive a 3 second burn. To calculate how big our thrust chamber needed to be to survive for 3 seconds, we first got thermodynamic properties of the combustion inside the chamber from NASA's CEARUN. These values were imported into a matlab script that solved for the heat transfer coefficient of the hot gas at each point in the chamber. This was then used to run 2D transient heat simulations in ANSYS Mechanical to find the minumum size of combustion chamber that could survive a 3 second firing.  </p>
+							<span class="image main"><img src="images/image1.png" alt="" /></span>
+							<span class="image main"><img src="images/image2.png" alt="" /></span>							
+							<p>The Injector is a Ox-centered scrintle, where the nitrous and ethanol are shot straight down, and the nitrous is rediricted radially out towards the fuel streams by a screw. The propellant tank was a tube with bolted bulkheads,where the nitrous is at the bottom and separated from the ethanol at the top by a piston.</p>
+							<span class="image"><img src="images/injector.jpg" alt="" /></span>		
+							<h3> Electronics </h3>		
+							<p>The electronics consist of a teensy 4.1 that controls 3 servo actuated ball valves, recieves data from 3 pressure transducers and a load cell, and a relay for the igniter. There are also 3 cameras, everything is powered by two 12-volt batteries that sit on top of the assembly, and everything comminucates to a laptop at the ground station via ethernet. The connection allows us to send commands, and to see live data and video from the pad. Data from the sensors is also stored onboard on a SD card in the teensy.</p>			
+							<span class="image center"><img src="images/electronics.jpg" alt="" /></span>	
+							<span class="image main"><img src="images/IMG_4654.JPG" alt="" /></span>
+						</div>
+					</div>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<section>
+							<h2>Get in touch</h2>
+							<form method="post" action="https://formspree.io/f/mbllwved">
+								<div class="fields">
+									<div class="field half">
+										<input type="text" name="name" id="name" placeholder="Name" />
+									</div>
+									<div class="field half">
+										<input type="email" name="email" id="email" placeholder="Email" />
+									</div>
+									<div class="field">
+										<textarea name="message" id="message" placeholder="Message"></textarea>
+									</div>
+								</div>
+								<ul class="actions">
+									<li><input type="submit" value="Send" class="primary" /></li>
+								</ul>
+							</form> 
+						</section>
+						<section>
+							<h2>Follow</h2>
+							<ul class="icons">
+								<li><a href="https://x.com/_betterment_" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<!-- <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+								<li><a href="https://www.instagram.com/timothy_novorok/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<!--<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li> -->
+								<!--<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li> -->
+								<!--<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li> -->
+								<!--<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li> -->
+								<!--<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li> -->
+							</ul>
+						</section>
+						<ul class="copyright">
+							<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						</ul>
+					</div>
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
