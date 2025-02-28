@@ -5,7 +5,6 @@
 ///
 
 /* Image */
-
 	.image {
 		border-radius: _size(border-radius);
 		border: 0;
@@ -45,6 +44,20 @@
 
 			img {
 				width: 100%;
+			}
+		}
+		&.resize {
+			width: 400px;
+			height: auto;
+		}
+		&.smaller {
+			display: block;
+			margin: 0 0 (_size(element-margin) / 10) 0;
+			width: 25%;
+			
+
+			img {
+				width: 25%;
 			}
 		}
 		&.center {
