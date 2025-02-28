@@ -2372,11 +2372,11 @@ input, select, textarea {
 		.image.smaller {
 				display: block;
 				margin: 0 0 _size(element-margin) 0;
-				width: 50%;
+				width: 75%;
 			}
 	
 			.image.smaller img {
-					width: 50%;
+					width: 75%;
 				}
 			.parent-container {
 					display: flex;
