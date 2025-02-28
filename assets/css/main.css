@@ -2378,13 +2378,7 @@ input, select, textarea {
 				.image.smaller img {
 					width: 100%;
 				}
-			
-				.parent-container {
-					display: flex;
-					justify-content: center; /* Centers horizontally */
-					align-items: center; /* Centers vertically (if needed) */
-				}		
-
+		
 /* Table */
 
 	.table-wrapper {
