@@ -2381,8 +2381,8 @@ input, select, textarea {
 			
 				.parent-container {
 					display: flex;
-					justify-content: center; // Centers horizontally
-					align-items: center; // Centers vertically (if needed)
+					justify-content: center; /* Centers horizontally */
+					align-items: center; /* Centers vertically (if needed) */
 				}		
 
 /* Table */
