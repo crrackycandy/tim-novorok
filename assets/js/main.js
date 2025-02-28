@@ -211,6 +211,3 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
-
-// Auto slideshow (optional)
-setInterval(() => { plusSlides(1); }, 5000); // Change image every 5 seconds
