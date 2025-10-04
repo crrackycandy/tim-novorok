@@ -2344,8 +2344,8 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
+			margin: 0 auto;
+			width: 60%;
 		}
 
 			.image.fit img {
@@ -2371,8 +2371,8 @@ input, select, textarea {
 			}
 		.image.smaller {
 				display: block;
-				margin: 0 0 _size(element-margin) 0;
-				width: 85%;
+				margin: 0 auto;
+				width: 40%;
 			}
 	
 			.image.smaller img {
