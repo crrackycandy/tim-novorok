@@ -3429,4 +3429,30 @@ input, select, textarea {
 		  from { opacity: .4 }
 		  to { opacity: 1 }
 		}
+#countdown {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 1px;
+}
+/* Countdown styling */
+#countdown h2 {
+  margin-bottom: 5px; /* Decrease space between title and timer */
+  letter-spacing: 4px;
+}
+
+#timer {
+  font-size: 2rem;
+  margin-top: 0; /* Remove extra top margin */
+}
+
+#timer span {
+  font-weight: bold;
+  color: #007bff; /* Default color for numbers */
+}
+
+#timer #seconds {
+  color: #DC143C; /* Make seconds red */
+}
+
 		

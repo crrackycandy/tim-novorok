@@ -212,4 +212,43 @@ function showSlides(n) {
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
-}			
+}
+// === Countdown Timer ===
+document.addEventListener("DOMContentLoaded", function () {
+  const countdownDate = new Date("2025-12-20T08:00:00").getTime();
+
+  const elDays = document.getElementById("days");
+  const elHours = document.getElementById("hours");
+  const elMinutes = document.getElementById("minutes");
+  const elSeconds = document.getElementById("seconds");
+  const elTimer = document.getElementById("timer");
+
+  if (!elDays || !elHours || !elMinutes || !elSeconds || !elTimer) {
+    console.warn("Countdown elements not found in DOM. Skipping countdown timer.");
+    return;
+  }
+
+  function update() {
+    const now = Date.now();
+    const distance = countdownDate - now;
+
+    if (distance <= 0) {
+      elTimer.textContent = "🎉 Countdown Complete!";
+      clearInterval(t);
+      return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    elDays.textContent = String(days).padStart(2, "0");
+    elHours.textContent = String(hours).padStart(2, "0");
+    elMinutes.textContent = String(minutes).padStart(2, "0");
+    elSeconds.textContent = String(seconds).padStart(2, "0");
+  }
+
+  update();                // Run immediately
+  const t = setInterval(update, 1000);
+});
