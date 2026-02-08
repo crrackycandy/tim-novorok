@@ -3454,5 +3454,20 @@ input, select, textarea {
 #timer #seconds {
   color: #DC143C; /* Make seconds red */
 }
+.rowimggrid {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
 
+/* Create two equal columns that sits next to each other */
+.columnimggrid {
+  flex: 25%;
+  padding: 0 4px;
+}
+
+.columnimggrid img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
 		
