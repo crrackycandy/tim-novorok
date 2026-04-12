@@ -68,7 +68,18 @@
 					caused the engine to be unable to sustain combustion. Specific issues experienced were GN2 leaks during tank pressurization and unreliable valve control
 					due to water getting in electronics. An extreme ice buildup was observed on the engine during oxidizer load, which is believed to have melted and flooded the igniter during the ignition sequence.
 					 These issues will be solved and more testing will follow.</p>
-				<p>An old version of the CAD is shown below.</p>
+				<h3> General Design </h3>
+					<p> The engine utilizes IPA/N₂O as propellants at a MR of 3.5. The injector is a triplet impinging design, O-F-O. 
+						Film cooling is used as the primary cooling method. The injector architecture is designed to be compatible with a future regeneratively cooled engine.
+						 The feed system uses 2 seamless aluminum tanks for the propellants, and nitrogen is used to pressurize the tanks.</p>
+					<p> The control system for the engine and feed system is a modified version of LabJack's LJStreamM.
+					  It runs on a LabJack T7 on the feed system and allows a user to see live data/send commands to the control system through a LabVIEW GUI. 
+					  A portion of the GUI is shown below.</p>
+					<span class="image fit"><img src="images/eng2/labview.png" alt="" /></span>
+					<p> </p>
+					<p>An old version of the CAD is shown below. It shows the engine mounted to the large horizontal test stand at FAR through a static mount without TVC hardware. 
+					An early version of the feed system is also displayed in the CAD.</p>
+
 				<span class="image fit"><img src="images/old eng2 cad.png" alt="" /></span>
 		<!-- <section id="countdown" style="text-align:center; padding:10px 0;">
 		<h2>Engine 2 Countdown</h2>
@@ -90,55 +101,55 @@
 							<p>The electronics consist of a teensy 4.1 that controls 3 servo actuated ball valves, receives data from 3 pressure transducers and a load cell, and a relay for the igniter. There are also 3 cameras, everything is powered by two 12-volt batteries that sit on top of the assembly, and everything communicates to a laptop at the ground station via ethernet. The connection allows us to send commands, and to see live data and video from the pad. Data from the sensors is also stored onboard on a SD card in the teensy.</p>			
 							<span class="image align-center"><img src="images/electronics.jpg" alt="" /></span>	
 							<span class="image main"><img src="images/IMG_4654.JPG" alt="" /></span>
-						</div>
-							Slideshow container  -->
+		</div>       -->
+						
 				<div class="slideshow-container">
 					<div class="mySlides fade">
 						<div class="numbertext">1 / 9</div>
-						<img src="images/inj1vs2.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/inj1vs2.png" style="width:100%">
 						<div class="text">Comparison of injector for engine 1 (bottom) and injector for engine 2 (top)
 						</div>
 					</div>
 
 					<div class="mySlides fade">
 						<div class="numbertext">2 / 9</div>
-						<img src="images/inj2onhand.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/inj2onhand.png" style="width:100%">
 						<div class="text">Holding injector partially assembled</div>
 					</div>
 
 					<div class="mySlides fade">
 						<div class="numbertext">3 / 9</div>
-						<img src="images/oring install.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/oring install.png" style="width:100%">
 						<div class="text">Installing o-rings</div>
 					</div>
 					<div class="mySlides fade">
 						<div class="numbertext">4 / 9</div>
-						<img src="images/oring remains.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/oring remains.png" style="width:100%">
 						<div class="text">O-rings getting destroyed during installation... oops</div>
 					</div>
 					<div class="mySlides fade">
 						<div class="numbertext">5 / 9</div>
-						<img src="images/valve waterflow.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/valve waterflow.png" style="width:100%">
 						<div class="text">Getting ready to water-flow valves to verify Cv</div>
 					</div>
 					<div class="mySlides fade">
 						<div class="numbertext">6 / 9</div>
-						<img src="images/tvc troubleshoot.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/tvc troubleshoot.png" style="width:100%">
 						<div class="text">Working on electronics for TVC linear actuators</div>
 					</div>
 					<div class="mySlides fade">
 						<div class="numbertext">7 / 9</div>
-						<img src="images/cad vs print.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/image-9.png" style="width:100%">
 						<div class="text">Printing various designs to check snap ring fit</div>
 					</div>
 					<div class="mySlides fade">
 						<div class="numbertext">8 / 9</div>
-						<img src="images/engine 2 on LH.jpg" style="width:100%">
+						<img src="images/eng2/slideshow/engine 2 on LH.png" style="width:100%">
 						<div class="text">Getting engine and feed system ready for testing at FAR</div>
 					</div>
 					<div class="mySlides fade">
 						<div class="numbertext">9 / 9</div>
-						<img src="images/eng2 injector heat excel.png" style="width:100%">
+						<img src="images/eng2/slideshow/eng 2 injector heat excel.png" style="width:100%">
 						<div class="text">Part of the math to determine injector face thickness.</div>
 					</div>
 					<!--Next and previous buttons -->
@@ -165,7 +176,7 @@
 		<div class="columnimggrid">
 			<img src="images/eng2/injv1.png" style="width:100%">
 			<img src="images/eng2/chamber cad.png" style="width:100%">
-		<img src="images/eng2/valve waterflow.jpg" style="width:100%">
+		<img src="images/eng2/chamber assembly .jpg" style="width:100%">
 		<img src="images/eng2/valve waterflow.jpg" style="width:100%">
 		<img src="images/eng2/electronics cad1.jpg" style="width:100%">
 		<img src="images/eng2/stand3.5.jpg" style="width:100%">
