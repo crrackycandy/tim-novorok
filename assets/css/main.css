@@ -211,6 +211,10 @@ input, select, textarea {
 		font-size: 1.1em;
 	}
 
+	.gallery-title {
+		letter-spacing: 0.1em;
+	}
+
 	h3 {
 		font-size: 1em;
 	}
@@ -3457,17 +3461,47 @@ input, select, textarea {
 .rowimggrid {
   display: flex;
   flex-wrap: wrap;
+	justify-content: center;
   padding: 0 4px;
 }
 
 /* Create two equal columns that sits next to each other */
 .columnimggrid {
-  flex: 25%;
+	flex: 0 0 25%;
   padding: 0 4px;
 }
 
 .columnimggrid img {
   margin-top: 8px;
   vertical-align: middle;
+}
+
+.columnimggrid video {
+	display: block;
+	margin-top: 8px;
+}
+
+.columnimggrid .gallery-caption {
+	margin: 8px 0 0;
+	position: relative;
+}
+
+.columnimggrid .gallery-caption img {
+	display: block;
+	margin-top: 0;
+}
+
+.columnimggrid .gallery-caption figcaption {
+	background: rgba(0, 0, 0, 0.65);
+	bottom: 0;
+	color: #fff;
+	font-size: 0.8em;
+	font-weight: 700;
+	left: 0;
+	line-height: 1.5;
+	padding: 0.5em 0.6em;
+	position: absolute;
+	width: 100%;
+	text-align: center;
 }
 		
